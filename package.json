@@ -1,11 +1,15 @@
 {
-  "name": "author-blog-project",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
+    "@hookform/resolvers": "^3.3.1",
+    "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.8",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -15,6 +19,7 @@
     "react-scripts": "5.0.1",
     "redux": "^4.2.1",
     "redux-thunk": "^2.4.2",
+    "styled-component": "^2.8.0",
     "styled-components": "^6.0.7",
     "web-vitals": "^2.1.4",
     "yup": "^1.2.0"
@@ -28,7 +33,11 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "prettier"
+    ],
+    "plugins": [
+      "prettier"
     ]
   },
   "browserslist": {
@@ -42,5 +51,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5"
+  },
+  "description": "Start GSON SERVER  json-server --watch src/db.json --port 3005",
+  "main": "index.js",
+  "author": "Anton Krat",
+  "license": "ISC"
 }
